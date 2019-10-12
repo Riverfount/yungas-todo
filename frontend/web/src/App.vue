@@ -18,7 +18,7 @@
             :flat="true"
             :width="500"
             :outline="true"
-            :disabled="!!task.completed_at"
+            :hidden="!!task.completed_at"
           >
             <v-card-title primary-title>
               <div class="headline">{{ task.title }}</div>
@@ -66,7 +66,7 @@ export default {
       this.axios.get('/tasks/')
         .then(res => { this.tasks = res.data })
         .catch(error => {
-          console.log(error)
+          alert(error)
         })
     }
   },

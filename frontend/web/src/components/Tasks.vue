@@ -90,6 +90,7 @@ export default {
     async saveTask () {
       const res = await this.axios.post('/tasks/', this.form)
       if (res.status === 201) {
+        this.form = {}
         this.dialog = false
         this.snackbar = true
       }
