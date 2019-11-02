@@ -15,8 +15,7 @@ djangorestframework = "*"
 markdown = "*"
 django-filter = "*"
 python-decouple = "*"
-pytest-django = "*"
 django-cors-headers = "*"
 
 [requires]
-python_version = "3.7"
+python_version = "3.8"
