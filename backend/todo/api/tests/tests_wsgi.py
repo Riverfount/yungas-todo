@@ -9,5 +9,5 @@ def test_wsgi_default_settings():
     assert 'todo.settings' == os.environ["DJANGO_SETTINGS_MODULE"]
 
 
-def test_application_instace():
+def test_application_instance():
     assert isinstance(application, WSGIHandler)
