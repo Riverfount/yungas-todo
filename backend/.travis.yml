@@ -10,7 +10,7 @@ install:
   - pipenv sync -d
 
 script:
-  - pytest --cov
+  - pipenv run pytest --cov
 
 after_success:
   - codecov
